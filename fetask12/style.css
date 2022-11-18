@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* a {
+  text-decoration: none;
+}
+
+.layout {
+  width: 66%;
+  margin: auto;
+}
+
+.section-1 {
+  background-color: #101010;
+}
+
+header .head-all {
+  width: 95%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .head-all .hleft .logo img {
+  width: 100%;
+  max-height: 66px;
+}
+header .head-all .hright {
+  display: flex;
+}
+header .head-all .hright a {
+  display: inline-block;
+  color: #c6c9d8;
+}
+header .head-all .hright .hrnav {
+  display: flex;
+  align-items: center;
+}
+header .head-all .hright .hrnav ul {
+  margin: 0;
+}
+header .head-all .hright .hrnav ul #first {
+  color: #f9004d;
+}
+header .head-all .hright .hrnav li {
+  display: inline-block;
+  padding: 0 10px;
+}
+header .head-all .hrbtn {
+  display: flex;
+  align-items: center;
+}
+header .head-all .hrbtn a {
+  margin: 0 0 0 30px;
+  font-size: 0.8rem;
+  border: 2px solid #c6c9d8;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+header .head-all .hrbtn #ham {
+  scale: 1.2;
+  display: none;
+}
+header .head-all .hrbtn i::before {
+  color: white;
+  margin: 0 0 0 30px;
+  scale: 0.7;
+}
+
+.text-1 {
+  width: 100%;
+}
+.text-1 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  padding: 100px 15px 0;
+  font-size: 7rem;
+  background: -webkit-linear-gradient(#f94200, #f9004d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.boxes .box {
+  padding: 40px 15px;
+  margin: 50px 0 0;
+}
+.boxes .box img {
+  scale: 0.9;
+  margin: 0 0 30px;
+}
+.boxes .box h3 {
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 15px;
+  color: #c6c9d8;
+  font-size: 1.2rem;
+}
+.boxes .box p {
+  font-family: "Poppins", sans-serif;
+  color: #c6c9d8;
+  font-weight: 200;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    width: 95%;
+  }
+}
+@media (max-width: 992px) {
+  header .head-all .hleft .logo {
+    max-height: 50px;
+  }
+  header .head-all .hleft .logo img {
+    max-height: 50px;
+  }
+  header .hright #navv {
+    display: none;
+  }
+  header .hright .hrbtn #let {
+    display: none;
+  }
+  header .hright .hrbtn #ham {
+    display: inline-block;
+  }
+  .layout .text-1 h1 {
+    padding: 70px 15px 0;
+    margin: 0 0 10px;
+    font-size: 3rem;
+  }
+  .layout .boxes .container .box-all .box {
+    margin: 0;
+    padding: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
